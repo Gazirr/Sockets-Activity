@@ -5,10 +5,10 @@ import java.util.concurrent.CompletableFuture;
 public class ComparadorServidores {
     public static void main(String[] args) {
         // PASO 1: Probar con Apache (Puerto 80)
-        //robarServidor("http://localhost:80", "APACHE");
+        probarServidor("http://localhost:80", "APACHE");
 
         // PASO 2: Después cambia a Nginx (Puerto 8081) y vuelve a ejecutar
-         probarServidor("http://localhost:8081", "NGINX");
+        // probarServidor("http://localhost:8081", "NGINX");
     }
 
     public static void probarServidor(String url, String nombre) {
